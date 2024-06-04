@@ -1,0 +1,228 @@
+*{
+    margin: 0%;
+    font-family: "Roboto", sans-serif;
+
+}
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar cont"
+        "footer footer"
+        ;
+
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 50px auto 30px;
+    height: 100vh;
+    width:100vw
+}
+
+header{
+    grid-area: header;
+    background-color:rgb(20, 20, 20);
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    grid-area: footer;
+    background: rgb(229, 9, 20);
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: black;
+    color: #fff
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: cont;
+    background-image: url("https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/netflixteaser.png");
+}
+
+.head-img{
+    height: 40px;
+}
+
+h1{
+    color: aliceblue;
+    font-size: 50px;
+}
+
+.form-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 4px;
+    padding: 70px;
+    width: 450px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.75);
+  }
+
+  .form-wrapper h2 {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .form-wrapper form {
+    margin: 25px 0 65px;
+  }
+  form .form-control {
+    height: 50px;
+    position: relative;
+    margin-bottom: 16px;
+  }
+  .form-control input {
+    height: 100%;
+    width: 100%;
+    background: #333;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+  .form-control input:is(:focus, :valid) {
+    background: #444;
+    padding: 16px 20px 0;
+  }
+  .form-control label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    color: #8c8c8c;
+    transition: all 0.1s ease;
+  }
+  .form-control input:is(:focus, :valid) ~ label {
+    font-size: 0.75rem;
+    transform: translateY(-130%);
+  }
+  form button {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1rem;
+    background: #e50914;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin: 25px 0 10px;
+    cursor: pointer;
+    transition: 0.1s ease;
+  }
+  form button:hover {
+    background: #c40812;
+  }
+  .form-wrapper a {
+    text-decoration: none;
+  }
+  .form-wrapper a:hover {
+    text-decoration: underline;
+  }
+  .form-wrapper :where(label, p, small, a) {
+    color: #b3b3b3;
+  }.form-wrapper form {
+    margin: 25px 0 65px;
+  }
+  form .form-control {
+    height: 50px;
+    position: relative;
+    margin-bottom: 16px;
+  }
+  .form-control input {
+    height: 100%;
+    width: 100%;
+    background: #333;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+  .form-control input:is(:focus, :valid) {
+    background: #444;
+    padding: 16px 20px 0;
+  }
+  .form-control label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    color: #8c8c8c;
+    transition: all 0.1s ease;
+  }
+  .form-control input:is(:focus, :valid) ~ label {
+    font-size: 0.75rem;
+    transform: translateY(-130%);
+  }
+  form button {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1rem;
+    background: #e50914;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin: 25px 0 10px;
+    cursor: pointer;
+    transition: 0.1s ease;
+  }
+  form button:hover {
+    background: #c40812;
+  }
+  .form-wrapper a {
+    text-decoration: none;
+  }
+  .form-wrapper a:hover {
+    text-decoration: underline;
+  }
+  .form-wrapper :where(label, p, small, a) {
+    color: #b3b3b3;
+  }
+
+  .sidebar button {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1rem;
+    background: #e50914;
+    color: #fff;
+    font-weight: 200;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin: 25px 0 10px;
+    cursor: pointer;
+    transition: 0.1s ease;
+  }
+  .sidebar button:hover {
+    background: #c40812;
+  }
+
+  @media screen and (max-width: 760px){
+    .container {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "sidebar"
+        "content"
+        "footer"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px auto 20px;
+        height: 100vh;
+    }
+}

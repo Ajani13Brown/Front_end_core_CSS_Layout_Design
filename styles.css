@@ -1,0 +1,58 @@
+h1{
+    text-align: center;
+    font-size: 100px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(45deg, #2d3de9d3 25%, #6d99ecdc 50%,#86e4f562 75%);
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 2px#00000045;
+}
+
+nav, footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color:darkturquoise;
+    color:aliceblue;
+}
+
+nav a:hover, footer a:hover{
+    color:aliceblue;
+}
+main{
+    background-color: #8193b9dc;
+}
+
+.container{
+    width:75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    font-size: 35px;
+    gap: 75px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(180deg, #2a638dd3 20%,#2d5194dc 40%,#16cde5eb 60%, #bbfbfa 80%);
+    color:rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px #00000062;
+}
+
+header{
+    background-image: url("https://weyburn.ca/wp-content/uploads/2016/02/hot-water-header-image-1024x195.jpg");
+    background-size:cover;
+    height: 150px;
+    width:100%;
+    background-repeat:no-repeat;
+    background-position:top;
+}
+
+@media screen and (max-width: 600px) {
+    nav, footer{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color:darkturquoise;
+        color:aliceblue;
+    }
+}
